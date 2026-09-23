@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Check out profile source
+        uses: actions/checkout@v7
+
       - name: Generate SVGs
         uses: Platane/snk/svg-only@v3
         with:
@@ -22,6 +25,14 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%237dd3fc&color_dots=%23161b22,%231e3a5f,%233b82f6,%238b5cf6,%2334d399
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate profile statistics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_stats.py \
+            --username "${GITHUB_REPOSITORY_OWNER}" \
+            --output dist/github-profile-stats.svg
 
       - name: Publish generated SVGs
         env:

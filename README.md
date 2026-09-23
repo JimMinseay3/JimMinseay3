@@ -81,8 +81,7 @@ dev automation       █████████████████░░�
 ## GitHub signal
 
 <div align="center">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=JimMinseay3&show_icons=true&hide_border=true&bg_color=0D1117&title_color=7DD3FC&icon_color=A78BFA&text_color=C9D1D9&rank_icon=github" alt="POCO's GitHub statistics" />
-  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JimMinseay3&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=7DD3FC&text_color=C9D1D9" alt="Most used languages" />
+  <img src="https://raw.githubusercontent.com/JimMinseay3/JimMinseay3/output/github-profile-stats.svg" width="100%" alt="POCO's GitHub statistics and public language mix" />
 </div>
 
 <picture>
