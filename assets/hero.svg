@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">POCO — Software Engineer and AI Systems Builder</title>
+  <desc id="desc">A dark engineering dashboard with a glowing network, system status, and POCO's technical profile.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b14"/>
+      <stop offset="0.48" stop-color="#0d1528"/>
+      <stop offset="1" stop-color="#11102a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity=".55"/>
+      <stop offset=".55" stop-color="#38bdf8" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#93c5fd" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect x="18" y="18" width="1164" height="324" rx="22"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <g clip-path="url(#frame)">
+    <rect x="18" y="18" width="1164" height="324" fill="url(#grid)"/>
+    <circle cx="960" cy="170" r="260" fill="url(#orb)">
+      <animate attributeName="opacity" values=".55;.9;.55" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M18 292 C240 240 330 356 550 300 S890 210 1182 278" fill="none" stroke="url(#accent)" stroke-opacity=".18" stroke-width="2"/>
+    <path d="M18 302 C250 250 340 365 560 310 S900 220 1182 288" fill="none" stroke="url(#accent)" stroke-opacity=".08" stroke-width="18" filter="url(#glow)"/>
+
+    <g stroke="#7dd3fc" stroke-opacity=".28" stroke-width="1.4">
+      <path d="M820 112L918 70L1022 126L1110 78"/>
+      <path d="M820 112L868 220L982 190L1084 246"/>
+      <path d="M918 70L982 190L1022 126L1084 246"/>
+      <path d="M868 220L770 250L820 112"/>
+    </g>
+    <g fill="#0d1528" stroke-width="2">
+      <circle cx="820" cy="112" r="7" stroke="#7dd3fc"/>
+      <circle cx="918" cy="70" r="6" stroke="#a78bfa"/>
+      <circle cx="1022" cy="126" r="9" stroke="#34d399"/>
+      <circle cx="1110" cy="78" r="5" stroke="#7dd3fc"/>
+      <circle cx="868" cy="220" r="8" stroke="#34d399"/>
+      <circle cx="982" cy="190" r="6" stroke="#a78bfa"/>
+      <circle cx="1084" cy="246" r="8" stroke="#7dd3fc"/>
+      <circle cx="770" cy="250" r="5" stroke="#a78bfa"/>
+    </g>
+    <circle cx="1022" cy="126" r="16" fill="none" stroke="#34d399" stroke-opacity=".45">
+      <animate attributeName="r" values="10;28" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".8;0" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <rect x="18" y="18" width="1164" height="324" rx="22" fill="none" stroke="#7dd3fc" stroke-opacity=".16"/>
+  <rect x="42" y="42" width="1116" height="28" rx="8" fill="#080d18" stroke="#94a3b8" stroke-opacity=".13"/>
+  <circle cx="60" cy="56" r="4" fill="#fb7185"/>
+  <circle cx="75" cy="56" r="4" fill="#facc15"/>
+  <circle cx="90" cy="56" r="4" fill="#34d399"/>
+  <text x="112" y="61" fill="#64748b" font-family="Consolas, Menlo, monospace" font-size="11" letter-spacing="1.8">PROFILE://ENGINEERING-LAB</text>
+  <circle cx="1068" cy="56" r="4" fill="#34d399" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1080" y="61" fill="#94a3b8" font-family="Consolas, Menlo, monospace" font-size="11">ONLINE</text>
+
+  <text x="72" y="143" fill="url(#accent)" font-family="Segoe UI, Arial, sans-serif" font-size="68" font-weight="750" letter-spacing="7">POCO.</text>
+  <text x="76" y="186" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="2">SOFTWARE ENGINEER · AI SYSTEMS BUILDER</text>
+  <text x="76" y="223" fill="#94a3b8" font-family="Consolas, Menlo, monospace" font-size="15" letter-spacing="1.1">building intelligent, reliable and useful software</text>
+
+  <g font-family="Consolas, Menlo, monospace" font-size="12">
+    <rect x="76" y="258" width="122" height="30" rx="15" fill="#7dd3fc" fill-opacity=".08" stroke="#7dd3fc" stroke-opacity=".36"/>
+    <text x="94" y="278" fill="#7dd3fc">AI SYSTEMS</text>
+    <rect x="210" y="258" width="130" height="30" rx="15" fill="#a78bfa" fill-opacity=".08" stroke="#a78bfa" stroke-opacity=".36"/>
+    <text x="228" y="278" fill="#c4b5fd">FULL STACK</text>
+    <rect x="352" y="258" width="132" height="30" rx="15" fill="#34d399" fill-opacity=".08" stroke="#34d399" stroke-opacity=".36"/>
+    <text x="370" y="278" fill="#6ee7b7">AUTOMATION</text>
+  </g>
+  <rect x="490" y="264" width="9" height="18" rx="2" fill="#7dd3fc">
+    <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
